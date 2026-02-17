@@ -5,125 +5,63 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PEI PAULO IDEVAR</title>
 <style>
-    body { margin:0; font-family:Arial,sans-serif; background-color:#f4f4f4; }
-    header { background:#005baa; color:white; padding:20px; text-align:center; }
-    nav { background:#003f7f; padding:10px; text-align:center; }
-    nav a { color:white; margin:0 10px; text-decoration:none; font-weight:bold; }
-    nav a:hover { text-decoration:underline; }
-    section { padding:40px 20px; max-width:1000px; margin:auto; background:white; margin-top:20px; border-radius:8px; box-shadow:0px 0px 10px rgba(0,0,0,0.1); }
-    h2 { color:#005baa; }
-    .card { background:#e9f2ff; padding:20px; margin:15px 0; border-radius:6px; }
-    footer { background:#003f7f; color:white; text-align:center; padding:15px; margin-top:30px; }
-    button { background:#005baa; color:white; border:none; padding:10px 15px; border-radius:5px; cursor:pointer; }
-    button:hover { background:#003f7f; }
+    body { margin:0; font-family:Arial,sans-serif; background-color:#e6f0fa; color:#333; }
+    header { background:#003f7f; color:white; padding:30px 20px; text-align:center; }
+    header h1 { margin:0; font-size:2.5em; }
+    header p { font-size:1.2em; margin-top:10px; }
+    nav { background:#005baa; padding:12px; text-align:center; position:sticky; top:0; z-index:100; }
+    nav a { color:white; margin:0 10px; text-decoration:none; font-weight:bold; padding:8px 12px; border-radius:5px; transition:0.3s; }
+    nav a:hover { background:#003f7f; }
+    section { padding:50px 20px; max-width:1100px; margin:auto; background:white; border-radius:10px; box-shadow:0 0 15px rgba(0,0,0,0.1); margin-top:30px; }
+    section h2 { color:#003f7f; border-bottom:3px solid #005baa; padding-bottom:10px; }
+    .card { background:#e6f0fa; padding:20px; margin:15px 0; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+    .links-grid { display:flex; flex-wrap:wrap; gap:12px; margin-top:20px; }
+    .links-grid a { background:#005baa; color:white; padding:12px 18px; border-radius:6px; text-decoration:none; font-weight:bold; flex:1 1 200px; text-align:center; transition:0.3s; }
+    .links-grid a:hover { background:#003f7f; }
+    footer { background:#003f7f; color:white; text-align:center; padding:20px; margin-top:30px; font-size:0.9em; }
+    @media (max-width:768px) { .links-grid { flex-direction:column; } nav a { display:block; margin:6px 0; } }
 </style>
 </head>
 <body>
 
 <header>
     <h1>PEI PAULO IDEVAR</h1>
-    <p>Educação pública de qualidade para todos</p>
+    <p>Educação pública que transforma a nossa comunidade</p>
 </header>
 
 <nav>
     <a href="#inicio">Início</a>
-    <a href="#sobre">Sobre</a>
-    <a href="#cursos">Cursos</a>
-    <a href="#eventos">Eventos</a>
-    <a href="#comunicados">Comunicados</a>
-    <a href="#atendimentos">Atendimentos</a>
-    <a href="#tutoriais">Tutoriais</a>
-    <a href="#programa">Ensino Integral</a>
-    <a href="#acolhedores">Acolhedores</a>
-    <a href="#clube">Clube Juvenil</a>
-    <a href="#tutoria">Tutoria</a>
+    <a href="#avisos">Avisos</a>
+    <a href="#links-uteis">Links Úteis</a>
     <a href="#contato">Contato</a>
 </nav>
 
 <section id="inicio">
     <h2>Bem-vindo ao PEI PAULO IDEVAR</h2>
-    <p>Nosso compromisso é oferecer ensino público de qualidade, formando cidadãos preparados para o futuro.</p>
+    <p>Este é o portal oficial da nossa escola! Encontre aqui todas as informações que você precisa — avisos, links de acesso e contatos importantes.</p>
 </section>
 
-<section id="sobre">
-    <h2>Sobre a Escola</h2>
-    <p>O PEI PAULO IDEVAR atende alunos do Ensino Fundamental e Médio, promovendo educação inclusiva, cidadã e transformadora.</p>
-</section>
-
-<section id="cursos">
-    <h2>Cursos Oferecidos</h2>
+<section id="avisos">
+    <h2>Avisos Importantes</h2>
     <div class="card">
-        <h3>Ensino Fundamental</h3>
-        <p>Educação básica completa com professores qualificados.</p>
+        <h3>📌 Retorno às aulas presenciais</h3>
+        <p>As aulas presenciais retornam no dia 03 de novembro. Fique atento ao cronograma divulgado na secretaria.</p>
     </div>
     <div class="card">
-        <h3>Ensino Médio</h3>
-        <p>Preparação para o ENEM e mercado de trabalho.</p>
+        <h3>📌 Avaliação externa SARESP</h3>
+        <p>Não esqueça de responder ao formulário de participação nos dias 09 e 10 de dezembro.</p>
     </div>
 </section>
 
-<section id="eventos">
-    <h2>Eventos</h2>
-    <div class="card">
-        <p>Confira os próximos eventos da escola, como feiras, apresentações e atividades culturais.</p>
-    </div>
-</section>
-
-<section id="comunicados">
-    <h2>Comunicados</h2>
-    <div class="card">
-        <p>Acompanhe avisos importantes, mudanças de horários e comunicados da direção.</p>
-    </div>
-</section>
-
-<section id="atendimentos">
-    <h2>Atendimentos</h2>
-    <div class="card">
-        <p>Informações sobre atendimento aos alunos, pais e comunidade.</p>
-    </div>
-</section>
-
-<section id="tutoriais">
-    <h2>Tutoriais</h2>
-    <div class="card">
-        <p>Guia passo a passo de como acessar plataformas, materiais e recursos da escola.</p>
-    </div>
-</section>
-
-<section id="programa">
-    <h2>Programa de Ensino Integral</h2>
-    <div class="card">
-        <p>Informações sobre o Programa de Ensino Integral, atividades complementares e horários ampliados.</p>
-    </div>
-</section>
-
-<section id="acolhedores">
-    <h2>Acolhedores</h2>
-    <div class="card">
-        <p>Equipe e ações dedicadas ao acolhimento dos alunos, promovendo bem-estar e apoio emocional.</p>
-    </div>
-</section>
-
-<section id="clube">
-    <h2>Clube Juvenil</h2>
-    <div class="card">
-        <p>Atividades recreativas, culturais e esportivas para o desenvolvimento dos alunos.</p>
-    </div>
-</section>
-
-<section id="tutoria">
-    <h2>Tutoria</h2>
-    <div class="card">
-        <p>Suporte acadêmico individual ou em grupo para ajudar no aprendizado e tirar dúvidas.</p>
-    </div>
-</section>
-
-<section id="noticias">
-    <h2>Notícias</h2>
-    <div class="card">
-        <h3>Feira de Ciências 2026</h3>
-        <p>Inscrições abertas na secretaria da escola.</p>
-        <button onclick="alert('Procure a secretaria para mais informações!')">Saiba mais</button>
+<section id="links-uteis">
+    <h2>Links Úteis</h2>
+    <div class="links-grid">
+        <a href="https://sed.educacao.sp.gov.br" target="_blank">Secretaria Escolar Digital</a>
+        <a href="#">Atividades do Aluno</a>
+        <a href="#">Biblioteca Virtual</a>
+        <a href="#">Portal do Professor</a>
+        <a href="#">Links de Acesso</a>
+        <a href="#">Grupos de Comunicação</a>
     </div>
 </section>
 
